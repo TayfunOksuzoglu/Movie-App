@@ -55,7 +55,7 @@ function loadMovieDetails() {
       movieSearchBox.value = '';
 
       const ApiCall = await fetch(
-        `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=6346747e`
+        `https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=6346747e`
       );
       const movieDetails = await ApiCall.json();
 
