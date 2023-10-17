@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Movie App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Logo -->
+      <div class="logo">
+        <div class="container">
+          <div class="logo-click">
+            <p>Movie<span>App.</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Logo -->
+      <!-- Search Container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h3>Search Movie:</h3>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search Movie Title..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!-- List here -->
+            <!-- <div class="search-list-item">
+              <div class="search-item-thumbnail">
+                <img src="arrival.jpg" alt="Thumbnail of the Movie" />
+              </div>
+              <div class="search-item-info">
+                <h3>Arrival</h3>
+                <p>2016</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Search Container -->
+
+      <!-- Result Container -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!-- movie information here -->
+            <!-- <div class="movie-poster">
+              <img src="arrival.jpg" alt="Poster of the Movie" />
+            </div>
+            <div class="movie-info">
+              <h3 class="movie-title">Arrival</h3>
+              <ul class="movie-misc-info">
+                <li class="year">Year: 2016</li>
+                <li class="rated">Ratings: PG-13</li>
+                <li class="released">08 September 2016</li>
+              </ul>
+              <p class="genre">
+                <strong>Genre:</strong> Mystery, Sci-Fi, Drama
+              </p>
+              <p class="writer">
+                <strong>Writer:</strong> Eric Heisserer, Ted Chiang
+              </p>
+              <p class="actors">
+                <strong>Actors:</strong> Amy Adams, Jeremey Renner, Forest
+                Whitaker
+              </p>
+              <p class="plot">
+                <strong>Plot:</strong> A linguist works with the military to
+                communicate with alien lifeforms after twelve mysterious
+                spacecraft appear around the world.
+              </p>
+              <p class="language"><strong>Language:</strong> English</p>
+              <p class="awards">
+                <strong><i class="fas fa-award"></i></strong> 1 Oscar. 69 wins &
+                268 nominations total.
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- End of Result Container -->
+    </div>
+  </body>
+</html>
